@@ -1,0 +1,80 @@
+.pageContainer {
+  background: #f5f5f5;
+  padding: 24px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.pageTitle {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.tableContainer {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style cho tên người dùng - màu đen, không hiện con trỏ */
+.userName {
+  color: #000;
+  cursor: default;
+}
+
+/* Style cho các link màu xanh */
+.blueLink {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+/* Loại bỏ gạch chân khi hover vào link */
+.blueLink:hover {
+  text-decoration: none;
+}
+
+/* Style cho nút action với icon con mắt và khung viền */
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.actionButton:hover {
+  color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.eyeIcon {
+  margin-right: 5px;
+}
+
+/* Target Ant Design's table classes */
+.tableContainer :global(.ant-table) {
+  width: 100%;
+}
+
+.tableContainer :global(.ant-table-container) {
+  width: 100%;
+}
+
+.tableContainer :global(.ant-table-content) {
+  width: 100%;
+}
+
+/* Style lại các đường viền bảng */
+.tableContainer :global(.ant-table-cell) {
+  padding: 16px;
+}
+
+/* Style cho các hàng bảng khi hover */
+.tableContainer :global(.ant-table-tbody > tr:hover > td) {
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,120 @@
+.pageContainer {
+  background: white;
+  padding: 24px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.pageTitle {
+  margin-bottom: 16px;
+}
+
+/* User column styling */
+.userContainer {
+  display: flex;
+  align-items: center;
+}
+
+.userInteractive {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* User avatar styling */
+.userAvatar {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.userAvatar:hover {
+  transform: scale(1.05);
+}
+
+/* User name styling with elegant colors */
+.userName {
+  cursor: pointer;
+  color: #3f91fc; /* Elegant blue shade - default state */
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.userName:hover {
+  color: #002664; /* Lighter blue shade - hover state */
+}
+
+/* Fix alignment in Actions column */
+.tableContainer :global(.ant-table-thead > tr > th:nth-child(4)) {
+  text-align: center;
+}
+
+.tableContainer :global(.ant-table-tbody > tr > td:nth-child(4)) {
+  text-align: center;
+  padding: 16px;
+}
+
+/* Center the button within its cell */
+.viewButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+/* Style the eye icon for better visibility */
+.viewButton :global(.anticon) {
+  margin-right: 2px;
+}
+
+.viewButton:hover {
+  background-color: #f0f0f0;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.tableContainer {
+  width: 100%;
+}
+
+/* Target Ant Design's table classes */
+.tableContainer :global(.ant-table) {
+  width: 100%;
+}
+
+.tableContainer :global(.ant-table-container) {
+  width: 100%;
+}
+
+.tableContainer :global(.ant-table-content) {
+  width: 100%;
+}
+
+/* Set specific column widths */
+.tableContainer :global(.ant-table-thead > tr > th:nth-child(1)),
+.tableContainer :global(.ant-table-tbody > tr > td:nth-child(1)) {
+  width: 80px;
+}
+
+.tableContainer :global(.ant-table-thead > tr > th:nth-child(2)),
+.tableContainer :global(.ant-table-tbody > tr > td:nth-child(2)) {
+  width: 50%;
+}
+
+.tableContainer :global(.ant-table-thead > tr > th:nth-child(3)),
+.tableContainer :global(.ant-table-tbody > tr > td:nth-child(3)) {
+  width: 20%;
+}
+
+.tableContainer :global(.ant-table-thead > tr > th:nth-child(4)),
+.tableContainer :global(.ant-table-tbody > tr > td:nth-child(4)) {
+  width: 20%;
+  text-align: center;
+}
