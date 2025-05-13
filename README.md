@@ -9,7 +9,7 @@ This is a React-based web application built with Refine framework that displays 
 Before you begin, make sure you have the following installed:
 
 - Node.js (v16 or higher)
-- npm (v8 or higher) or yarn (v1.22 or higher)
+- npm (v8 or higher)
 
 ## Installation
 
@@ -24,12 +24,9 @@ Follow these steps to set up and run the project:
    ```
 
 3. **Install dependencies**
+
    ```
    npm install
-   ```
-   or if you use yarn:
-   ```
-   yarn install
    ```
 
 ## Running the Application
@@ -37,17 +34,11 @@ Follow these steps to set up and run the project:
 1. **Start the development server**
 
    ```
-   npm start
-   ```
-
-   or with yarn:
-
-   ```
-   yarn start
+   npm run dev
    ```
 
 2. **Open the application in your browser**
-   The application will automatically open in your default browser at [http://localhost:3000](http://localhost:3000)
+   The application will automatically open in your default browser at [http://localhost:5173]
 
 ## Project Structure
 
@@ -56,6 +47,8 @@ Follow these steps to set up and run the project:
   - `/components` - Reusable React components
   - `/hooks` - Custom React hooks
   - `/styles` - CSS/SCSS modules for styling
+  - `/assets` - Static assets like images, fonts, and icons
+  - `/routes` - Route definitions and navigation configuration
 
 ## Features
 
